@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+{% include head.html %}
+<body>
+<div class="container">
+  {% include nav.html %}
+  <hr class="stylish"/>
+  {{ content }}
+</div>
+<footer>
+  <hr class="stylish"/>
+  {% include nav.html %}
+  <div>
+    Theme: <a href="https://github.com/abhn/Elementary">Elementary</a>
+    <br/>
+    <a>{{ site.name }}</a> &copy; {{ site.time | date: '%Y' }}
+  </div>
+</footer>
+{% if site.javascript_enabled %}
+  <script src="/assets/main.js"></script>
+{% endif %}
+</body>
+</html>
