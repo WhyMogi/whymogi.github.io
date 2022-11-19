@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grassmannian
+title: Grassmannian (1)
 tags: 
 - AG
 ---
@@ -144,4 +144,4 @@ and we need to check $3$ minors of $4\times 4$ matrix. We know matrix form of $\
 
 ### 6
 
-We
+We can reduce the number of polynomials (using Plucker relations) but I will add later
