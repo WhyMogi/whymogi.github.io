@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Algebraic Groups (1)
+title: Algebraic Groups (2)
 tags: 
 - AG
 ---
@@ -135,8 +135,9 @@ is a polynomial. This shows the image of the Plucker map is same as the solution
 
 ### 5 
 
-Here is an example what is happening in the proof. (One may wonder, including me, there should be a lot variables while calculating minors) Let $d=2$ and $n=4$ and write $f_i$ be a basis of $\bigwedge^2k^4$ with lexicographic order (from $f_1=e_1\wedge e_2$ to $f_{6}=e_3\wedge e_54). The proof says (it is not explicitly written) we have the map 
+Here is an example what is happening in the proof. (One may wonder, including me, there should be a lot variables while calculating minors) Let $d=2$ and $n=4$ and write $f_i$ be a basis of $\bigwedge^2k^4$ with lexicographic order (from $f_1=e_1\wedge e_2$ to $f_{6}=e_3\wedge e_5$). The proof says (it is not explicitly written) we have the map 
 \\(\bigwedge^d k^n\rightarrow \Hom(k^n, bigwedge^{d+1} k^n),\quad (a_1,\cdots a_6)\mapsto sum_{i=1}^6 a_i\varphi_{f_i}\\)
 and we need to check $3$ minors of $4\times 4$ matrix. We know matrix form of $\varphi_{f_i}$ explicitly. Thus the polynomial looks like
 \\((a_1,\cdots a_6)\mapsto \begin{pamtrix} a_4& a_5& a_6& 0\\ -a_2& -a_3& 0 &a_6\\ a_1& -a_5& -a_3& 0\\ 0 & a_1& a_2&a_4\\\end{pmatirx}\\)
 
+(there might be some error up to sign)
