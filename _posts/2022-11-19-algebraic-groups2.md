@@ -130,14 +130,14 @@ We claim the Plucker map $\Gr(d,n)\rightarrow \bP(\bigwedge^d k^n)=\bP^{m-1}$ is
 If $x_1\wedge\cdots \wedge x_d=y_1\wedge\cdots y_d$ in $\bP^{m-1}$, then the [previous part](###3) says $x_1,\cdots,x_d$ and $y_1,\cdots,y_d$ generate same $d$-dimensional subspace of $k^n$. This ends the proof of injectivity.
 
 The point $x\in \bP^{m-1}$ is the image of the Plucker map if and only if $x$ is a pure wedge if and only if the rank of $\varphi_x$ is $n-d$ if and only if the rank of $\varphi_x$ is $\leq n-d$ (we have an upper bound of the dimension of $\ker\varphi_x$). The linear algebra says the last statement is equivalent to the every $(n-d+1)$ minors of (matrix form of) $\varphi_x$ vanishes (which is a polynomial in terms of entries of $\varphi_x$). Note that the map 
-\\[\bigwedge^d k^n\rightarrow \Hom(k^n, bigwedge^{d+1} k^n),\quad x\mapsto \varphi_x\\]
+\\[\bigwedge^d k^n\rightarrow \Hom(k^n, \bigwedge^{d+1} k^n),\quad x\mapsto \varphi_x\\]
 is a polynomial. This shows the image of the Plucker map is same as the solution of polynomials in $\bP^{m-1}$. $\square$
 
 ### 5 
 
 Here is an example what is happening in the proof. (One may wonder, including me, there should be a lot variables while calculating minors) Let $d=2$ and $n=4$ and write $f_i$ be a basis of $\bigwedge^2k^4$ with lexicographic order (from $f_1=e_1\wedge e_2$ to $f_{6}=e_3\wedge e_4$). The proof says (it is not explicitly written) we have the map 
-\\[\bigwedge^d k^n\rightarrow \Hom(k^n, bigwedge^{d+1} k^n),\quad (a_1,\cdots a_6)\mapsto sum_{i=1}^6 a_i\varphi_{f_i}\\]
+\\[\bigwedge^d k^n\rightarrow \Hom(k^n, \bigwedge^{d+1} k^n),\quad (a_1,\cdots a_6)\mapsto \sum_{i=1}^6 a_i\varphi_{f_i}\\]
 and we need to check $3$ minors of $4\times 4$ matrix. We know matrix form of $\varphi_{f_i}$ explicitly. Thus the polynomial looks like
-\\[(a_1,\cdots a_6)\mapsto \begin{pamtrix} a_4& a_5& a_6& 0\\ -a_2& -a_3& 0 &a_6\\ a_1& -a_5& -a_3& 0\\ 0 & a_1& a_2&a_4\\\end{pmatirx}\\]
+\\[(a_1,\cdots a_6)\mapsto \begin{pmatrix} a_4& a_5& a_6& 0\\ -a_2& -a_3& 0 &a_6\\ a_1& -a_5& -a_3& 0\\ 0 & a_1& a_2&a_4\\\end{pmatirx}\\]
 
 (there might be some error up to sign). Then there are 16 $3$ minors with $6$ variables. $a_i$ corresponds to coordinate $f_i$. 
